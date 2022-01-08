@@ -23,6 +23,7 @@ class ImojiCollectionViewController: UICollectionViewController {
         collectionView.collectionViewLayout = flowLayout
         collectionView.isPagingEnabled = false // 트루로 하면 20의 간격만큼 스크롤이 밀리는 문제 발생
         collectionView.decelerationRate = .fast
+//        flowLayout.itemSize = CGSize(width: <#T##CGFloat#>, height: <#T##CGFloat#>) // 디폴트값은 50, 50
     }
 
     // MARK: UICollectionViewDataSource
@@ -72,5 +73,11 @@ extension ImojiCollectionViewController { // UICollectionViewDelegate가 UIScrol
     
     // 아래 메서드는 사용자가 스크롤을 하고 스크린과 손이 떨어졌을 때 호출되는 메서드이다.
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        // velocity는 가속도. 천천히 움직일 수도 있고 빠르게 움직일 수도 있다. (빠를 때에만 페이지를 이동하도록)
+        print(#function)
+        let cellIncludingSpace = collectionView.bounds.width + flowLayout.minimumLineSpacing
+        print(cellIncludingSpace)
+        targetContentOffset.pointee = CGPoint(x: cellIncludingSpace, y: 0)
     }
 }
