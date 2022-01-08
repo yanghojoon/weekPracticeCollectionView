@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DE78D6812789984700621974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78D6802789984700621974 /* AppDelegate.swift */; };
 		DE78D6832789984700621974 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78D6822789984700621974 /* SceneDelegate.swift */; };
-		DE78D6852789984700621974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78D6842789984700621974 /* ViewController.swift */; };
 		DE78D6882789984700621974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE78D6862789984700621974 /* Main.storyboard */; };
 		DE78D68A2789984800621974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE78D6892789984800621974 /* Assets.xcassets */; };
 		DE78D68D2789984800621974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE78D68B2789984800621974 /* LaunchScreen.storyboard */; };
+		DE78D695278999AA00621974 /* ImojiCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78D694278999AA00621974 /* ImojiCollectionViewController.swift */; };
+		DE78D69727899A4000621974 /* ImojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE78D69627899A4000621974 /* ImojiCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE78D67D2789984700621974 /* weekPracticeCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weekPracticeCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE78D6802789984700621974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE78D6822789984700621974 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE78D6842789984700621974 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE78D6872789984700621974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE78D6892789984800621974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE78D68C2789984800621974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE78D68E2789984800621974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE78D694278999AA00621974 /* ImojiCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImojiCollectionViewController.swift; sourceTree = "<group>"; };
+		DE78D69627899A4000621974 /* ImojiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImojiCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				DE78D6802789984700621974 /* AppDelegate.swift */,
 				DE78D6822789984700621974 /* SceneDelegate.swift */,
-				DE78D6842789984700621974 /* ViewController.swift */,
+				DE78D694278999AA00621974 /* ImojiCollectionViewController.swift */,
+				DE78D69627899A4000621974 /* ImojiCollectionViewCell.swift */,
 				DE78D6862789984700621974 /* Main.storyboard */,
 				DE78D6892789984800621974 /* Assets.xcassets */,
 				DE78D68B2789984800621974 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE78D6852789984700621974 /* ViewController.swift in Sources */,
 				DE78D6812789984700621974 /* AppDelegate.swift in Sources */,
 				DE78D6832789984700621974 /* SceneDelegate.swift in Sources */,
+				DE78D695278999AA00621974 /* ImojiCollectionViewController.swift in Sources */,
+				DE78D69727899A4000621974 /* ImojiCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
